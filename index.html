@@ -15,16 +15,18 @@
   </style>
 </head>
 <body>
-  <h1 id="headerText">Welcome to My Webpage</h1>
+  <h1>Welcome to my First HTML website</h1>
+  <h2 id="welcomeTitle">Welcome to my page</h2>
+  <p>You made it! Welcome to my page. My name is Michael Manko and I currently attend the University of Pittsburgh as a mechanical engineering major.</p>
   <button id="clickButton">Click me</button>
 
   <script>
     // JavaScript code
-    const headerText = document.getElementById("headerText");
+    const welcomeTitle = document.getElementById("welcomeTitle");
     const clickButton = document.getElementById("clickButton");
 
     clickButton.addEventListener("click", () => {
-      headerText.style.color = getRandomColor();
+      welcomeTitle.style.color = getRandomColor();
     });
 
     // Function to generate a random color
