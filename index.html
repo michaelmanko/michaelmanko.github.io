@@ -3,42 +3,53 @@
 <head>
   <title>My Webpage with JavaScript</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    #clickButton {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Include the new styles.css -->
 </head>
 <body>
-  <h1>Welcome to my First HTML website</h1>
-  <h2 id="welcomeTitle">Welcome to my page!!!</h2>
-  <p>You made it! Welcome to my page. My name is Michael Manko and I currently attend the University of Pittsburgh as a mechanical engineering major.</p>
-  <button id="clickButton">Click me</button>
+  <div class="content"> <!-- Wrap the existing content with a div for styling -->
+    <header><h1>Welcome to my Website!</h1></header>
+    <div class="flex-container"> <!-- Create a container for the sidebar and main content -->
+      <aside class="sidebar">
+        <!-- Your sidebar content goes here -->
+        <h2>About Me</h2>
+        <p>Name: Michael Manko</p>
+        <p>School: University of Pittsburgh</p>
+        <p>Major: Mechanical Engineering</p>
+        <p>Email: mjm409@pitt.edu</p>
+        <p>Phone: 412-738-2383</p>
+      </aside>
 
-  <script>
-    // JavaScript code
-    const welcomeTitle = document.getElementById("welcomeTitle");
-    const clickButton = document.getElementById("clickButton");
+      <div class="main-content"> <!-- Create a container for the main content -->
+        <header class="center-header"><h2>Things to Know</h2></header> <!-- Change the header size to h2 -->
+        <p>This website was created to practice my html skills. It will get occasional updates, so changes are on the way. Some information is attached so if you have any questions
+          or concerns please feel free to contact me. In time I may make a seperate webpage to discuss various topics, but until then I will keep improving my coding skills. New features will
+          be added so keep refreshing. I'll try to update this weekly.
+        </p>
 
-    clickButton.addEventListener("click", () => {
-      welcomeTitle.style.color = getRandomColor();
-    });
+        <h2 id="welcomeTitle">Party Time!</h2>
 
-    // Function to generate a random color
-    function getRandomColor() {
-      const letters = "0123456789ABCDEF";
-      let color = "#";
-      for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-      }
-      return color;
-    }
-  </script>
+        <!--Click me button + JS code--> 
+        <button id="clickButton">Click me</button>
+        <script>
+          const welcomeTitle = document.getElementById("welcomeTitle");
+          const clickButton = document.getElementById("clickButton");
+
+          clickButton.addEventListener("click", () => {
+            welcomeTitle.style.color = getRandomColor();
+          });
+
+          // Function to generate a random color
+          function getRandomColor() {
+            const letters = "0123456789ABCDEF";
+            let color = "#";
+            for (let i = 0; i < 6; i++) {
+              color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+          }
+        </script>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
