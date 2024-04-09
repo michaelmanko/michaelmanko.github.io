@@ -1,3 +1,8 @@
-document.write("This is a JS code");
-document.write("This is a js code post changes 0.1");
-document.write("This is a js code post changes 0.2");
+function showPage(pageId) {
+    var pages = document.getElementsByClassName("page");
+    for (var i = 0; i < pages.length; i++) {
+      pages[i].style.display = "none";
+    }
+    document.getElementById(pageId).style.display = "block";
+  }
+  

@@ -8,11 +8,20 @@
 </head>
 <body>
   <div class="navbar">
-    <button id="home-btn">Home</button>
-    <button id="articles-btn">Articles</button>
-    <button id="experiences-btn">Experiences</button>
+    <button id="home-btn" onclick="showPage('home')">Home</button>
+    <button id="articles-btn" onclick="showPage('articles')">Articles</button>
+    <button id="experiences-btn" onclick="showPage('experiences')">Experiences</button>
   </div>
   <hr class="divider">
-  <!-- Other content of your website goes here -->
+  <div id="home" class="page">
+    <h1>Hello, this is HOME</h1>
+  </div>
+  <div id="articles" class="page">
+    <h1>Hello, this is ARTICLES</h1>
+  </div>
+  <div id="experiences" class="page">
+    <h1>Hello, this is EXPERIENCES</h1>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
