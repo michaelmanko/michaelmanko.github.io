@@ -1,52 +1,33 @@
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #FEFED1;
-  color: #000000; /* Black color for the text */
-  font-family: "Times New Roman", Times, serif;
 }
 
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
+.navbar {
+  background-color: #333;
+  overflow: hidden;
 }
 
-header {
+.navbar button {
+  float: left;
+  display: block;
+  color: white;
   text-align: center;
-}
-
-body {
-  text-align: left;
-}
-
-#clickButton {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border: none;
   cursor: pointer;
 }
 
-.flex-container {
-  display: flex; /* Use flexbox to create a row layout */
+.navbar button:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.sidebar {
-  flex: 1; /* Make the sidebar grow to take available space */
-  padding-right: 20px; /* Add some spacing between sidebar and main content */
-}
-
-.main-content {
-  flex: 2; /* Make the main content grow to take more space */
-}
-
-.center-header {
-  text-align: center; /* Add this style for centering the header */
-}
-
-h2 {
-  font-size: 20px; /* Adjust the font-size of the h2 header to match "About Me" */
-}
-
-#welcomeTitle {
-  color: white; /* Set the color of "Party Time" to white */
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: #999;
+  margin: 0;
 }
