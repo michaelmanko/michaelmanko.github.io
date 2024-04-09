@@ -22,13 +22,13 @@ body {
 }
 
 .navbar button:hover {
-  background-color: #ddd;
+  background-color: #FEFED1;
 }
 
 .divider {
   border: 0;
   height: 1px;
-  background-color: #999;
+  background-color: #FEFED1;
   margin: 0;
 }
 
