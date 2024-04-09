@@ -7,11 +7,11 @@ body {
 .navbar {
   background-color: #FEFED1; /* Change background color to #FEFED1 */
   overflow: hidden;
+  text-align: center; /* Center align buttons */
 }
 
 .navbar button {
-  float: left;
-  display: block;
+  display: inline-block; /* Display buttons inline */
   color: black;
   text-align: center;
   padding: 14px 16px;
