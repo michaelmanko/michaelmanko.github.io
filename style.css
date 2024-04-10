@@ -3,7 +3,7 @@ body {
   padding: 0;
   background-color: #FFFFCC;
   color: black; /* Black color for the text */
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Monaco', 'Consolas', 'Courier New', monospace; /* Use Monaco or Consolas as the primary font */
 }
 
 .content {
