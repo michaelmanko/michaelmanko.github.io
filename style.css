@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-  background-color: #FEFED1; /* Change background color to #FEFED1 */
+  background-color: #FFFFCC; /* Change background color to #FEFED1 */
   overflow: hidden;
   text-align: center; /* Center align buttons */
 }
@@ -22,13 +22,13 @@ body {
 }
 
 .navbar button:hover {
-  background-color: #FEFED1;
+  background-color: #FFFFCC;
 }
 
 .divider {
   border: 0;
   height: 1px;
-  background-color: #FEFED1;
+  background-color: #FFFFCC;
   margin: 0;
 }
 
