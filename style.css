@@ -1,6 +1,41 @@
 body {
-  background-color: #FFFFCC;
-  font-family: "Times New Roman", Times, serif;
-  color: black;
+  font-family: "Times New Roman", Times, serif; /* Change font to Times New Roman */
+  margin: 0;
+  color: black; /* Set text color to black */
 }
 
+.navbar {
+  background-color: #FEFED1; /* Change background color to #FEFED1 */
+  overflow: hidden;
+  text-align: center; /* Center align buttons */
+}
+
+.navbar button {
+  display: inline-block; /* Display buttons inline */
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: #ddd;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: #999;
+  margin: 0;
+}
+
+.page {
+  display: none;
+}
+
+.page h1 {
+  text-align: center;
+}
