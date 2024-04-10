@@ -1,1 +1,3 @@
-This website consists of basic code written in HTML, CSS, and JavaScript
+This website consists of basic code written in HTML, CSS, and JavaScript. Feel free to copy and manipulate it as you wish, all that I ask if that you remove my personal information before hosting.
+
+NOTE: Snippets of code were gathered from online resources such as Stack Overflow, GitHub, and ChatGPT.
