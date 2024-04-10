@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
-  color: #00FF00; /* Green color for the text */
+  background-color: #FFFFCC;
+  color: black; /* Black color for the text */
   font-family: 'Monaco', 'Consolas', 'Courier New', monospace; /* Use Monaco or Consolas as the primary font */
 }
 
