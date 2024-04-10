@@ -20,6 +20,12 @@ body {
   text-align: left;
 }
 
+#clickButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .flex-container {
   display: flex; /* Use flexbox to create a row layout */
 }
@@ -41,11 +47,6 @@ h2 {
   font-size: 20px; /* Adjust the font-size of the h2 header to match "About Me" */
 }
 
-/* Add this CSS code to your existing style.css file */
-hr {
-  border: 0;
-  height: 1px;
-  background-color: black; /* Set the line color to black */
-  width: 100%; /* Make the line span the entire width of the container */
-  margin-top: 10px; /* Add some margin to separate the line from the header */
+#welcomeTitle {
+  color: white; /* Set the color of "Party Time" to white */
 }
