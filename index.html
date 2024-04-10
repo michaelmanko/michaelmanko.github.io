@@ -1,19 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html> 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Page</title>
-    <style>
-        body {
-            font-family: "Times New Roman", Times, serif;
-            font-size: 24px;
-            text-align: center;
-            margin-top: 100px;
-        }
-    </style>
+  <title>michael manko html</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <p>Hello</p>
+  <div class="content"> <!-- Wrap the existing content with a div for styling -->
+    <header><h1>Welcome to my Website!</h1></header>
+    <div class="flex-container"> <!-- Create a container for the sidebar and main content -->
+      <aside class="sidebar">
+        <!-- Your sidebar content goes here -->
+        <h2>About Me</h2>
+        <p>Name: Michael Manko</p>
+        <p>School: University of Pittsburgh</p>
+        <p>Major: Mechanical Engineering</p>
+        <p>Email: mjm409@pitt.edu</p>
+        <p>Phone: 412-738-2383</p>
+      </aside>
+
+      <div class="main-content"> <!-- Create a container for the main content -->
+        <header class="center-header"><h2>Things to Know</h2></header> <!-- Change the header size to h2 -->
+        <p>This website was created to practice my HTML, JavaScipt, and CSS skills. It will receive occasional updates as time permits. Feel free to contact me if you have any questions or concerns. I’m currently enrolled at the University of Pittsburgh as a junior mechanical engineering student. I have relevant skills in MATLAB, C, Java, and Solidworks. Thanks for stopping by!
+        </p>
+
+        <h2 id="welcomeTitle">Party Time!</h2>
+
+        <!--Click me button + JS code--> 
+        <button id="clickButton">Click me</button>
+        <script>
+          const welcomeTitle = document.getElementById("welcomeTitle");
+          const clickButton = document.getElementById("clickButton");
+
+          clickButton.addEventListener("click", () => {
+            welcomeTitle.style.color = getRandomColor();
+          });
+
+          // Function to generate a random color
+          function getRandomColor() {
+            const letters = "0123456789ABCDEF";
+            let color = "#";
+            for (let i = 0; i < 6; i++) {
+              color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+          }
+        </script>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
