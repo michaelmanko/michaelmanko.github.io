@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFCC;
+    color: black; /* Black color for the text */
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  body {
+    text-align: left;
+  }
+  
+  .flex-container {
+    display: flex; /* Use flexbox to create a row layout */
+  }
+  
+  .sidebar {
+    flex: 1; /* Make the sidebar grow to take available space */
+    padding-right: 20px; /* Add some spacing between sidebar and main content */
+  }
+  
+  .main-content {
+    flex: 2; /* Make the main content grow to take more space */
+  }
+  
+  .center-header {
+    text-align: center; /* Add this style for centering the header */
+  }
+  
+  h2 {
+    font-size: 20px; /* Adjust the font-size of the h2 header to match "About Me" */
+  }
+  
+  /* Add this CSS code to your existing style.css file */
+  hr {
+    border: 0;
+    height: 1px;
+    background-color: black; /* Set the line color to black */
+    width: 100%; /* Make the line span the entire width of the container */
+    margin-top: 10px; /* Add some margin to separate the line from the header */
+  }
+  
+  /* Add this CSS code to your articles-style.css file */
+.center-header {
+    text-align: center; /* Center align the header */
+  }
+  
+  .left-aligned-text {
+    text-align: left; /* Left align the body text */
+  }
+  
+  /* Add this CSS code to your articles-style.css file */
+.center-header {
+    text-align: center; /* Center align the header and navigation */
+  }
+  
+  .left-aligned-text {
+    text-align: left; /* Left align the body text */
+  }
+  
